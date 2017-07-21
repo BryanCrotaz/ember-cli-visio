@@ -24,6 +24,10 @@ export default DisplaySvg.extend({
     // find all the shapes
     svg.selectAll("g[id^=shape]") // select all the viso shapes (includes connectors)
     .forEach( function(shapeNode, i) {
+      if (!shapeNode.node.attributes["shapeType"])
+        {
+          return;
+        }
       // we have each visio shapes
       const shape = {
         svg: shapeNode,
