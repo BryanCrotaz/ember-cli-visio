@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-svg/components/visio-shape-text/component';

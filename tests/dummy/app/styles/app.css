@@ -1,0 +1,20 @@
+g.offline rect {
+  stroke: red;
+  stroke-width: 2px;
+  fill: black;
+}
+
+g.offline text {
+  stroke: transparent;
+  fill: white;
+}
+
+g.online.shape rect {
+  stroke: green;
+  stroke-width: 2px;
+}
+
+g.online.connector path {
+  stroke: green;
+  stroke-width: 2px;
+}

@@ -1,0 +1,7 @@
+{{#visio-svg-display src="test.svg"}}
+{{#if target}}
+  {{visio-shape-class propid="Matrix1" addClass=(if connected "online" "offline")}}
+  {{visio-shape-text propid="Matrix1" text=(if connected "ONLINE" "OFFLINE")}}
+{{/if}}
+  {{visio-shape-class shapeType="Dynamic connector" addClass="online"}}
+{{/visio-svg-display}}
